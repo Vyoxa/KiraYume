@@ -1,0 +1,857 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Settings</class>
+ <widget class="QWidget" name="Settings">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>891</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QFrame" name="frame">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="4" column="0">
+       <widget class="QPushButton" name="reset_button">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #101f32;
+    border: none;
+    color: white;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 15px;
+    border-width: 3px;
+    min-width: 1em;
+    min-height: 1em;
+}
+
+QPushButton:hover {
+    background-color: #293547;
+}
+
+QPushButton:pressed {
+    background-color: #414c5b;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Reset defaults</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QPushButton" name="exit_button">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #101f32;
+    border: none;
+    color: white;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 15px;
+    border-width: 3px;
+    min-width: 1em;
+    min-height: 1em;
+}
+
+QPushButton:hover {
+    background-color: #293547;
+}
+
+QPushButton:pressed {
+    background-color: #414c5b;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Exit</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" colspan="2">
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="4" column="7">
+         <widget class="QPushButton" name="edit_saveas">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background-color: none;
+    border: none;
+}
+</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../../assets/edit128.png</normaloff>../../assets/edit128.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>30</width>
+            <height>35</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="1" colspan="6">
+         <widget class="QComboBox" name="ratio_mode">
+          <property name="styleSheet">
+           <string notr="true">QComboBox {
+    border: 1px solid #009688;
+    border-radius: 3px;
+    padding: 1px 18px 1px 3px;
+    min-width: 6em;
+    background: #333;
+    color: #fff;
+    outline: none;
+	padding: 8px
+}
+
+QComboBox:hover {
+    border-color: #666;
+}
+
+QComboBox:focus {
+    border-color: #009688;
+}
+
+QComboBox:drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+    border-left-width: 1px;
+    border-left-color: #444;
+    border-left-style: solid;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background: #333;
+}
+
+QComboBox:down-arrow {
+    image: url(assets/edit.png);
+    width: 10px;
+    height: 10px;
+}
+
+QComboBox QAbstractItemView {
+    border: 1px solid #444;
+    background-color: #333;
+    selection-background-color: #003c45;
+    selection-color: #fff;
+    outline: none;
+}
+
+QComboBox QAbstractItemView::item {
+    color: #fff;
+    outline: none;
+}
+
+QComboBox QAbstractItemView::item:selected {
+    background: #003c45;
+    color: #fff;
+    outline: none;
+}
+
+QScrollBar:vertical {
+    border: 1px solid #444;
+    background: #222;
+    width: 15px;
+    margin: 22px 0 22px 0;
+}
+
+QScrollBar::handle:vertical {
+    background: #555;
+    min-height: 20px;
+    border-radius: 3px;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical {
+    border: 1px solid #444;
+    background: #222;
+    height: 20px;
+    subcontrol-origin: margin;
+}
+
+QScrollBar::add-line:vertical:hover,
+QScrollBar::sub-line:vertical:hover {
+    background: #333;
+}
+
+QScrollBar::up-arrow:vertical,
+QScrollBar::down-arrow:vertical {
+    border: 1px solid #444;
+    width: 3px;
+    height: 3px;
+    background: #555;
+}
+
+QScrollBar::add-page:vertical,
+QScrollBar::sub-page:vertical {
+    background: none;
+}</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>Maintain Aspect Ratio, Expand to Fit</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Maintain Aspect Ratio</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Ignore Aspect Ratio, Resize to Fit</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="10" column="0">
+         <widget class="QLabel" name="label_2">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+	color: #148fa3; 
+	border: 1px solid #101f32; 
+	border-radius: 10px; 
+	border-width: 1px;
+}</string>
+          </property>
+          <property name="text">
+           <string>Text Color</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="0">
+         <widget class="QLabel" name="label_9">
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+    border: 1px solid #eabe42;
+    border-radius: 6px;
+    border-width: 1px;
+}</string>
+          </property>
+          <property name="text">
+           <string> Save Location </string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="0">
+         <widget class="QLabel" name="label">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+    border: 1px solid #17cc85;
+    border-radius: 6px;
+    border-width: 1px;
+}</string>
+          </property>
+          <property name="text">
+           <string>Save as</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="7">
+         <widget class="QPushButton" name="edit_savelocation">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="toolTip">
+           <string/>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background-color: none;
+    border: none;
+}
+</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../../assets/folderIcon128.png</normaloff>../../assets/folderIcon128.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>30</width>
+            <height>35</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="1" colspan="6">
+         <widget class="QLineEdit" name="RGBbgColorInput">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit { 
+	border: 1px solid #148fa3; 
+	height: 35px; 
+	border-radius: 2px;
+    border-width: 1px;
+}</string>
+          </property>
+          <property name="inputMask">
+           <string>000, 000, 000</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="8">
+         <widget class="QCheckBox" name="SETTING_TODO2">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QCheckBox {
+    color: #fff;
+    background-color: #2d2d2d;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+QCheckBox::indicator {
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    border: 2px solid #444;
+    background: #222;
+}
+
+QCheckBox::indicator:checked {
+    border: 2px solid #009688;
+    background: #003c45;
+}
+
+QCheckBox::indicator:unchecked:hover {
+    border: 2px solid #666;
+}
+
+QCheckBox::indicator:checked:hover {
+    border: 2px solid #33a89f;
+}
+
+QCheckBox:focus {
+    outline: none;
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="1" colspan="6">
+         <widget class="QLineEdit" name="RGBColorInput">
+          <property name="styleSheet">
+           <string notr="true">QLineEdit { 
+	border: 1px solid #148fa3; 
+	height: 35px; 
+	border-radius: 2px;
+    border-width: 1px;
+}</string>
+          </property>
+          <property name="inputMask">
+           <string>000, 000, 000</string>
+          </property>
+          <property name="text">
+           <string>, , </string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+          <property name="readOnly">
+           <bool>false</bool>
+          </property>
+          <property name="clearButtonEnabled">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="8">
+         <widget class="QCheckBox" name="SETTING_TODO1">
+          <property name="enabled">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QCheckBox {
+    color: #fff;
+    background-color: #2d2d2d;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+QCheckBox::indicator {
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    border: 2px solid #444;
+    background: #222;
+}
+
+QCheckBox::indicator:checked {
+    border: 2px solid #009688;
+    background: #003c45;
+}
+
+QCheckBox::indicator:unchecked:hover {
+    border: 2px solid #666;
+}
+
+QCheckBox::indicator:checked:hover {
+    border: 2px solid #33a89f;
+}
+
+QCheckBox:focus {
+    outline: none;
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="13" column="7">
+         <widget class="QPushButton" name="edit_font">
+          <property name="cursor">
+           <cursorShape>PointingHandCursor</cursorShape>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton {
+    background-color: none;
+    border: none;
+}
+</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="icon">
+           <iconset>
+            <normaloff>../../assets/edit128.png</normaloff>../../assets/edit128.png</iconset>
+          </property>
+          <property name="iconSize">
+           <size>
+            <width>30</width>
+            <height>35</height>
+           </size>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="8">
+         <widget class="QCheckBox" name="auto_import_cd">
+          <property name="toolTip">
+           <string>If possible, add the folder that the program exe is in on launch.</string>
+          </property>
+          <property name="statusTip">
+           <string/>
+          </property>
+          <property name="whatsThis">
+           <string/>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QCheckBox {
+    color: #148fa3;
+    background-color: #2d2d2d;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+QCheckBox::indicator {
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    border: 2px solid #444;
+    background: #222;
+}
+
+QCheckBox::indicator:checked {
+    border: 2px solid #009688;
+    background: #003c45;
+}
+
+QCheckBox::indicator:unchecked:hover {
+    border: 2px solid #666;
+}
+
+QCheckBox::indicator:checked:hover {
+    border: 2px solid #33a89f;
+}
+
+QCheckBox:focus {
+    outline: none;
+}</string>
+          </property>
+          <property name="text">
+           <string>On startup: Import current directory</string>
+          </property>
+          <property name="checkable">
+           <bool>true</bool>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="1" column="1" colspan="6">
+         <widget class="QLabel" name="SaveLocationName">
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+    border: 1px solid #eabe42;
+    border-radius: 2px;
+    border-width: 1px;
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="8">
+         <widget class="QCheckBox" name="auto_background_color">
+          <property name="styleSheet">
+           <string notr="true">QCheckBox {
+    color: #148fa3;
+    background-color: #2d2d2d;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+QCheckBox::indicator {
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    border: 2px solid #444;
+    background: #222;
+}
+
+QCheckBox::indicator:checked {
+    border: 2px solid #009688;
+    background: #003c45;
+}
+
+QCheckBox::indicator:unchecked:hover {
+    border: 2px solid #666;
+}
+
+QCheckBox::indicator:checked:hover {
+    border: 2px solid #33a89f;
+}
+
+QCheckBox:focus {
+    outline: none;
+}</string>
+          </property>
+          <property name="text">
+           <string>Auto detect background color</string>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="7">
+         <widget class="QLabel" name="RGBLabelBackground">
+          <property name="styleSheet">
+           <string notr="true">QLabel { 
+	color: #148fa3; 
+	font-weight: bold;
+}</string>
+          </property>
+          <property name="text">
+           <string>RGB</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="8">
+         <widget class="QCheckBox" name="auto_text_color">
+          <property name="styleSheet">
+           <string notr="true">QCheckBox {
+    color: #148fa3;
+    background-color: #2d2d2d;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+QCheckBox::indicator {
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    border: 2px solid #444;
+    background: #222;
+}
+
+QCheckBox::indicator:checked {
+    border: 2px solid #009688;
+    background: #003c45;
+}
+
+QCheckBox::indicator:unchecked:hover {
+    border: 2px solid #666;
+}
+
+QCheckBox::indicator:checked:hover {
+    border: 2px solid #33a89f;
+}
+
+QCheckBox:focus {
+    outline: none;
+}</string>
+          </property>
+          <property name="text">
+           <string>Auto detect text color</string>
+          </property>
+          <property name="checked">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="10" column="7">
+         <widget class="QLabel" name="RGBLabelText">
+          <property name="styleSheet">
+           <string notr="true">QLabel { 
+	color: #148fa3; 
+	font-weight: bold;
+}</string>
+          </property>
+          <property name="text">
+           <string>RGB</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="0">
+         <widget class="QLabel" name="label_8">
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+	color: #148fa3; 
+	border: 1px solid #101f32; 
+	border-radius: 10px; 
+	border-width: 1px;
+}</string>
+          </property>
+          <property name="text">
+           <string>Background Color</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="13" column="0">
+         <widget class="QLabel" name="label_3">
+          <property name="enabled">
+           <bool>true</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+	color: #148fa3; 
+	border: 1px solid #101f32; 
+	border-radius: 10px; 
+	border-width: 1px;
+}</string>
+          </property>
+          <property name="text">
+           <string>Text Font</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="4" column="1" colspan="6">
+         <widget class="QLabel" name="SaveAsName">
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+    border: 1px solid #17cc85;
+    border-radius: 2px;
+    border-width: 1px;
+}</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="QLabel" name="label_4">
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+    border: 1px solid #009688;
+    border-radius: 6px;
+    border-width: 1px;
+	padding: 8px
+}</string>
+          </property>
+          <property name="text">
+           <string>Image Ratio Mode</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="9" column="0" colspan="9">
+         <widget class="QLabel" name="label_7">
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+	color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.2 #148fa3, stop:1 #0d404e); 
+	font: 15px;
+	font-weight: bold;
+}</string>
+          </property>
+          <property name="text">
+           <string>「 TRANSLATION SETTINGS 」</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0" colspan="9">
+         <widget class="QLabel" name="label_16">
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+	color: #101f32;
+	font: 15px;
+	font-weight: bold;
+}</string>
+          </property>
+          <property name="text">
+           <string>「 GENERAL SETTINGS 」</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="12" column="1" colspan="8">
+         <widget class="QLabel" name="example_sentence">
+          <property name="toolTip">
+           <string>~Inspired by the training routine from One Punch Man.</string>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+	color: rgb(0, 0, 0);
+	background-color: rgb(255, 255, 255); 
+	font-size: 15px; 
+	border: 4px solid #000000;
+	border-radius: 18px; 
+}</string>
+          </property>
+          <property name="text">
+           <string>100 push-ups, 100 sit-ups, and 100 squats daily, followed by a 10-kilometer run—every day, no excuses!</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="12" column="0">
+         <widget class="QLabel" name="label_5">
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+	color: #148fa3; 
+	border: 1px solid #101f32; 
+	border-radius: 10px; 
+	border-width: 1px;
+}</string>
+          </property>
+          <property name="text">
+           <string>Example Colors</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+        <item row="13" column="1" colspan="6">
+         <widget class="QLabel" name="text_font">
+          <property name="styleSheet">
+           <string notr="true">QLabel {
+    border: 1px solid #101f32;
+    border-radius: 2px;
+    border-width: 1px;
+}</string>
+          </property>
+          <property name="text">
+           <string>AnimeAce</string>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item row="3" column="0" colspan="2">
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>0</width>
+          <height>10</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>550</width>
+    <height>296</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0" rowspan="5" colspan="2">
+    <widget class="QFrame" name="frame">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <item row="9" column="2">
+       <widget class="QPushButton" name="close_button">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	color: #fcfcfc;
+    background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 #13a29a, stop:1 #1b95cb); 
+    padding: 8px;
+    border-radius: 14px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 #146f97, stop:1 #0d6e69); 
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 #0d4964, stop:1 #063b38); 
+}</string>
+        </property>
+        <property name="text">
+         <string>Assign and Exit</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0" colspan="3">
+       <widget class="QLabel" name="label_16">
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+	font-weight: bold;
+}</string>
+        </property>
+        <property name="text">
+         <string>「 TESSERACT OCR 」</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0" colspan="3">
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>Please select the location of tesseract.exe to enable OCR functionality.</string>
+        </property>
+        <property name="wordWrap">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0" colspan="3">
+       <widget class="QLabel" name="download_here">
+        <property name="text">
+         <string> Don't have Tesseract OCR installed? you can download it from &lt;a href=&quot;https://github.com/UB-Mannheim/tesseract/wiki&quot; style=&quot;text-decoration:none; color:#7289da;&quot;&gt;here.&lt;/a&gt;</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="2">
+       <widget class="QPushButton" name="edit_exe_path_button">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="cursor">
+         <cursorShape>PointingHandCursor</cursorShape>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	color: #13a29a;
+	font-weight: bold;
+    background-color: none;
+    border: none;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Choose Location</string>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>../../assets/TesseractSettings512.png</normaloff>../../assets/TesseractSettings512.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>30</width>
+          <height>35</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0" colspan="2">
+       <widget class="QLabel" name="executable_path">
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+    border: 1px solid #13a29a;
+    border-radius: 2px;
+    border-width: 1px;
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="0">
+       <widget class="QPushButton" name="open_tessdata_button">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	color: #fcfcfc;
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 #101f32, stop:0.7 #1b95cb); 
+    padding: 8px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 #101f32, stop:0.9 #1b95cb); 
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 #101f32, stop:1 #1b95cb); 
+}</string>
+        </property>
+        <property name="text">
+         <string>Open tessdata folder</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="0" rowspan="3" colspan="3">
+       <widget class="QGroupBox" name="traineddata_box">
+        <property name="styleSheet">
+         <string notr="true">QGroupBox {
+    color: #fcfcfc;
+    border: 2px solid #13a29a;
+    border-radius: 6px;
+    margin-top: 10px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding: 0 5px;
+    color: #13a29a;
+}
+
+
+
+
+QCheckBox {
+    color: #fff;
+    background-color: #333;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+QCheckBox::indicator {
+    width: 15px;
+    height: 15px;
+    border-radius: 3px;
+    border: 2px solid #444;
+    background: #222;
+}
+
+QCheckBox::indicator:checked {
+    border: 2px solid #009688;
+    background: #003c45;
+}
+
+QCheckBox::indicator:unchecked:hover {
+    border: 2px solid #666;
+}
+
+QCheckBox::indicator:checked:hover {
+    border: 2px solid #33a89f;
+}
+
+QCheckBox:focus {
+    outline: none;
+}</string>
+        </property>
+        <property name="title">
+         <string/>
+        </property>
+        <property name="flat">
+         <bool>false</bool>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="1">
+       <widget class="QPushButton" name="reload_button">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	color: #fcfcfc;
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 #1b95cb, stop:1 #13a29a); 
+    padding: 8px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 #0d6e69, stop:1 #146f97); 
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 #063b38, stop:1 #0d4964); 
+}</string>
+        </property>
+        <property name="text">
+         <string>Reload</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>607</width>
+    <height>314</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="4" column="0" colspan="3">
+    <widget class="QFrame" name="frame">
+     <property name="styleSheet">
+      <string notr="true">QFrame {
+    border: 1px solid #148fa3;
+    border-radius: 10px;
+    border-width: 1px;
+}
+
+</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+    border: none
+}</string>
+        </property>
+        <property name="text">
+         <string>Variables: {original_name} {language_from} {language_to} {extension_suffix} {translator}</string>
+        </property>
+        <property name="wordWrap">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+    border: none
+}</string>
+        </property>
+        <property name="text">
+         <string>Name must end with either the original {extension_suffix} or a forced suffix (ex: .jpg  .png)</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_6">
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+    border: none
+}</string>
+        </property>
+        <property name="text">
+         <string>「EXAMPLE USAGE 」</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="text">
+         <string>Input: manga_001.png</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_4">
+        <property name="text">
+         <string>Formatting: {translator}{original_name}_{language_from}_to_{language_to}.jpg</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_5">
+        <property name="text">
+         <string>Output: Googlemanga_001_Japanese_to_English.jpg</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="0" colspan="3">
+    <widget class="QFrame" name="frame_2">
+     <property name="styleSheet">
+      <string notr="true">QFrame {
+    border: none;
+
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="2" column="1">
+       <widget class="QPushButton" name="save_button">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	color: #d7d7d7;
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.2 #148fa3, stop:1 #0d404e); 
+    border: none;
+    padding: 8px 2px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    border-width: 2px;
+}
+
+
+QPushButton:hover {
+	color: #b7b7b7;
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.2 #107282, stop:1 #0a333e); 
+}
+
+QPushButton:pressed {
+	color: #898989;
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.2 #0d5b68, stop:1 #082932); 
+}
+
+QPushButton:disabled {
+	color: #71adc1;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Save</string>
+        </property>
+       </widget>
+      </item>
+      <item row="2" column="0">
+       <widget class="QPushButton" name="reset_button">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+	color: #d7d7d7;
+    background-color: qlineargradient(spread:reflect, x1:0, y1:0.420318, x2:0.955224, y2:0.966, stop:0.5 #101f32, stop:1 #148fa3);
+    border: 1px solid rgba(0, 0, 0, 0);
+    padding: 8px 2px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 14px;
+    border-width: 2px;
+}
+
+QPushButton:hover {    
+	background-color: qlineargradient(spread:reflect, x1:0, y1:0.420318, x2:0.955224, y2:0.966, stop:0.1 #101f32, stop:1 #148fa3);
+}
+
+QPushButton:pressed {
+	background-color: #148fa3;
+}
+
+QPushButton:disabled {
+	color: #91abb9;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Reset Default</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0" colspan="2">
+       <widget class="QLineEdit" name="name_format">
+        <property name="styleSheet">
+         <string notr="true">QLineEdit {
+    border: 1px solid #101f32;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #f5f5f5;
+    color: #101f32;
+    font: 14px &quot;Segoe UI&quot;;
+	font-weight: bold;
+}
+
+QLineEdit:focus {
+    border: 2px solid #5a9bd4;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>{original_name}_{language_to){extension_suffix}</string>
+        </property>
+        <property name="maxLength">
+         <number>260</number>
+        </property>
+        <property name="frame">
+         <bool>false</bool>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+        <property name="clearButtonEnabled">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

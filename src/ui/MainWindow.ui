@@ -1,0 +1,1363 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <author>Vyoxa</author>
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1073</width>
+    <height>768</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+
+    background-color: #2b2b2b;
+
+    color: #e0e0e0;
+
+}
+
+
+QMenuBar {
+
+    background-color: #3b3b3b;
+
+    color: #e0e0e0;
+
+}
+
+
+QMenuBar::item {
+
+    spacing: 3px;
+
+    padding: 2px 10px;
+
+    background-color: #3b3b3b;
+
+    color: #e0e0e0;
+
+}
+
+
+QMenuBar::item:selected {
+
+    background-color: #4b4b4b;
+
+}
+
+
+QMenu {
+
+    background-color: #3b3b3b;
+
+    color: #e0e0e0;
+
+    border: 1px solid #4b4b4b;
+
+}
+
+
+QMenu::item {
+
+    background-color: #3b3b3b;
+
+    color: #e0e0e0;
+
+    padding: 5px 10px;
+
+}
+
+
+QMenu::item:selected {
+
+    background-color: #4b4b4b;
+
+}
+
+
+QToolTip {
+
+    background-color: #3b3b3b;
+
+    color: #e0e0e0;
+
+    border: 1px solid #4b4b4b;
+
+}
+
+
+QAbstractItemView {
+
+    background-color: #3b3b3b;
+
+    color: #e0e0e0;
+
+    alternate-background-color: #4b4b4b;
+
+    gridline-color: #4b4b4b;
+
+}
+
+
+QAbstractItemView::item {
+
+    background-color: transparent;
+
+    color: #e0e0e0;
+
+    selection-background-color: #4b4b4b;
+
+}
+
+
+QAbstractItemView::item:selected {
+
+    background-color: #4b4b4b;
+
+    color: #e0e0e0;
+
+}
+
+
+QAbstractItemView::item:hover {
+
+    background-color: #4b4b4b;
+
+}
+
+
+QAbstractItemView::item:selected:hover {
+
+    background-color: #5b5b5b;
+
+}
+
+
+QAbstractItemView::item:pressed {
+
+    background-color: #5b5b5b;
+
+}
+
+
+QAbstractItemView::section {
+
+    background-color: #3b3b3b;
+
+    color: #e0e0e0;
+
+    border-top: 1px solid #4b4b4b;
+
+}
+
+
+QAbstractItemView::section:selected {
+
+    background-color: #4b4b4b;
+
+}
+
+
+QAbstractItemView::section:selected:hover {
+
+    background-color: #5b5b5b;
+
+}
+
+
+QAbstractItemView::section:selected:pressed {
+
+    background-color: #5b5b5b;
+
+}
+
+
+QAbstractItemView::indicator {
+
+    width: 16px;
+
+    height: 16px;
+
+}
+
+
+QAbstractItemView::indicator:unchecked {
+
+    image: url(:/images/checkbox-unchecked.png);
+
+}
+
+
+QAbstractItemView::indicator:checked {
+
+    image: url(:/images/checkbox-checked.png);
+
+}
+
+
+QAbstractItemView::indicator:indeterminate {
+
+    image: url(:/images/checkbox-indeterminate.png);
+
+}
+
+
+QAbstractItemView::indicator:hover {
+
+    image: url(:/images/checkbox-unchecked-hover.png);
+
+}
+
+
+QAbstractItemView::indicator:checked:hover {
+
+    image: url(:/images/checkbox-checked-hover.png);
+
+}
+
+
+QAbstractItemView::indicator:indeterminate:hover {
+
+    image: url(:/images/checkbox-indeterminate-hover.png);
+
+}
+
+
+QAbstractItemView::indicator:pressed {
+
+    image: url(:/images/checkbox-unchecked-pressed.png);
+
+}
+
+
+QAbstractItemView::indicator:checked:pressed {
+
+    image: url(:/images/checkbox-checked-pressed.png);
+
+}
+
+
+QAbstractItemView::indicator:indeterminate:pressed {
+
+    image: url(:/images/checkbox-indeterminate-pressed.png);
+
+}
+
+
+QAbstractItemView::sub</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">QWidget {
+    background-color: #2b2b2b;
+    color: #e0e0e0;
+}
+
+
+QWidget:disabled {
+    color: #808080;
+}
+
+</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="1" column="0" rowspan="3">
+     <spacer name="verticalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>8</width>
+        <height>40</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="1" column="6" rowspan="4">
+     <spacer name="verticalSpacer">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>8</width>
+        <height>2</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="0" column="3">
+     <spacer name="horizontalSpacer">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>40</width>
+        <height>10</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="1" column="1" colspan="2">
+     <widget class="QPushButton" name="KiraYumeCredits_button">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 #101f32, stop:0.7 rgba(43, 43, 43, 0)); 
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+	border-radius: 5px;
+    border-width: 1px;
+}
+
+QPushButton:hover {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 #101f32, stop:0.85 rgba(43, 43, 43, 0)); 
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 #101f32, stop:0.7 rgba(22, 43, 70, 10)); 
+}
+</string>
+      </property>
+      <property name="text">
+       <string>KiraYume</string>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../../assets/AppIcon128.png</normaloff>../../assets/AppIcon128.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>45</width>
+        <height>45</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QFrame" name="frame_4">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QFrame {
+	border: none;
+    padding: 0px;
+    margin: 0px; 
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="8" column="0" colspan="6">
+        <widget class="QFrame" name="frame_3">
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <layout class="QGridLayout" name="gridLayout_3">
+          <item row="2" column="0">
+           <widget class="QLabel" name="label_4">
+            <property name="styleSheet">
+             <string notr="true">QLabel {
+	color: #d7d7d7;
+	font-weight: bold;
+}</string>
+            </property>
+            <property name="text">
+             <string>Translate From:</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="label_5">
+            <property name="styleSheet">
+             <string notr="true">QLabel {
+	color: #d7d7d7;
+	font-weight: bold;
+}</string>
+            </property>
+            <property name="text">
+             <string>Translate To:</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="label">
+            <property name="styleSheet">
+             <string notr="true">QLabel {
+	color: #d7d7d7;
+	font-weight: bold;
+}</string>
+            </property>
+            <property name="text">
+             <string>Translator:</string>
+            </property>
+            <property name="alignment">
+             <set>Qt::AlignCenter</set>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="1" colspan="2">
+           <widget class="QComboBox" name="language_from_combobox">
+            <property name="styleSheet">
+             <string notr="true">QComboBox {
+	color: #d7d7d7;
+	font-weight: bold;
+    border: 1px solid #444;
+    border-radius: 3px;
+    padding: 1px 18px 1px 3px;
+    min-width: 6em;
+    background: #333;
+    color: #fff;
+    outline: none;
+}
+
+QComboBox:hover {
+    border-color: #666;
+}
+
+QComboBox:focus {
+    border-color: #009688;
+}
+
+QComboBox:drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+    border-left-width: 1px;
+    border-left-color: #444;
+    border-left-style: solid;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background: #333;
+}
+
+QComboBox:down-arrow {
+    image: url(assets/edit.png);
+    width: 10px;
+    height: 10px;
+}
+
+QComboBox QAbstractItemView {
+    border: 1px solid #444;
+    background-color: #333;
+    selection-background-color: #003c45;
+    selection-color: #fff;
+    outline: none;
+}
+
+QComboBox QAbstractItemView::item {
+    color: #fff;
+    outline: none;
+}
+
+QComboBox QAbstractItemView::item:selected {
+    background: #003c45;
+    color: #fff;
+    outline: none;
+}
+
+QScrollBar {
+  background: #2b2b2b;  
+  border-radius: 5px;  
+}
+
+QScrollBar::handle {
+  background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(16, 31, 50, 100), stop:1 rgba(20, 143, 163, 100));  
+  border-radius: 4px;
+  opacity: 0.8;
+  width: 8px;  
+}
+
+QScrollBar::add-line, QScrollBar::sub-line {
+  width: 0px;
+  height: 0px;
+  margin: 0px;
+}
+
+QScrollBar::sub-page, QScrollBar::add-page {
+  background: #2b2b2b;
+}</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="2">
+           <widget class="QRadioButton" name="deepl_radio_button">
+            <property name="styleSheet">
+             <string notr="true">QRadioButton {
+	color: #d7d7d7;
+    background-color: #333;
+    padding: 3px;
+    border-radius: 5px;
+	font-weight: bold;
+}
+
+QRadioButton::indicator {
+    width: 15px;
+    height: 15px;
+    border-radius: 7px;
+    border: 2px solid #444;
+    background: #222;
+}
+
+QRadioButton::indicator:checked {
+    border: 2px solid #009688;
+    background: #003c45;
+}
+
+QRadioButton::indicator:unchecked:hover {
+    border: 2px solid #666;
+}
+
+QRadioButton::indicator:checked:hover {
+    border: 2px solid #33a89f;
+}
+
+QRadioButton:focus {
+    outline: none;
+}</string>
+            </property>
+            <property name="text">
+             <string>DeepL</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QRadioButton" name="google_radio_button">
+            <property name="styleSheet">
+             <string notr="true">QRadioButton {
+	color: #E5E5E5;
+    background-color: #333;
+    padding: 3px;
+    border-radius: 5px;
+	font-weight: bold;
+}
+
+QRadioButton::indicator {
+    width: 15px;
+    height: 15px;
+    border-radius: 7px;
+    border: 2px solid #444;
+    background: #222;
+}
+
+QRadioButton::indicator:checked {
+    border: 2px solid #009688;
+    background: #003c45;
+}
+
+QRadioButton::indicator:unchecked:hover {
+    border: 2px solid #666;
+}
+
+QRadioButton::indicator:checked:hover {
+    border: 2px solid #33a89f;
+}
+
+QRadioButton:focus {
+    outline: none;
+}</string>
+            </property>
+            <property name="text">
+             <string>Google</string>
+            </property>
+            <property name="checked">
+             <bool>true</bool>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1" colspan="2">
+           <widget class="QComboBox" name="language_to_combobox">
+            <property name="styleSheet">
+             <string notr="true">QComboBox {
+	color: #d7d7d7;
+	font-weight: bold;
+    border: 1px solid #444;
+    border-radius: 3px;
+    padding: 1px 18px 1px 3px;
+    min-width: 6em;
+    background: #333;
+    color: #fff;
+    outline: none;
+}
+
+QComboBox:hover {
+    border-color: #666;
+}
+
+QComboBox:focus {
+    border-color: #009688;
+}
+
+QComboBox:drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 15px;
+    border-left-width: 1px;
+    border-left-color: #444;
+    border-left-style: solid;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    background: #333;
+}
+
+QComboBox:down-arrow {
+    image: url(assets/edit.png);
+    width: 10px;
+    height: 10px;
+}
+
+QComboBox QAbstractItemView {
+    border: 1px solid #444;
+    background-color: #333;
+    selection-background-color: #003c45;
+    selection-color: #fff;
+    outline: none;
+}
+
+QComboBox QAbstractItemView::item {
+    color: #fff;
+    outline: none;
+}
+
+QComboBox QAbstractItemView::item:selected {
+    background: #003c45;
+    color: #fff;
+    outline: none;
+}
+
+QScrollBar {
+  background: #2b2b2b;  
+  border-radius: 5px;  
+}
+
+QScrollBar::handle {
+  background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(16, 31, 50, 100), stop:1 rgba(20, 143, 163, 100));  
+  border-radius: 4px;
+  opacity: 0.8;
+  width: 8px;  
+}
+
+QScrollBar::add-line, QScrollBar::sub-line {
+  width: 0px;
+  height: 0px;
+  margin: 0px;
+}
+
+QScrollBar::sub-page, QScrollBar::add-page {
+  background: #2b2b2b;
+}</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="2">
+           <widget class="QLabel" name="tess_activity">
+            <property name="maximumSize">
+             <size>
+              <width>50</width>
+              <height>50</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QLabel {
+	background-color: qradialgradient(spread:pad, cx:0.5, cy:0.5, radius:0.5, fx:0.5, fy:0.5, stop:0.149254 rgba(16, 31, 50, 206), stop:0.328358 rgba(16, 31, 50, 80), stop:0.442786 rgba(16, 31, 50, 80), stop:0.572139 rgba(20, 132, 132, 80), stop:0.686567 rgba(20, 132, 132, 250), stop:1 rgba(255, 255, 255, 0));
+	border-radius: 20px;
+	margin-top: 10px;
+	margin-right: 10px;
+}</string>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="0" colspan="2">
+           <widget class="QPushButton" name="tess_settings_button">
+            <property name="enabled">
+             <bool>true</bool>
+            </property>
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="cursor">
+             <cursorShape>PointingHandCursor</cursorShape>
+            </property>
+            <property name="toolTip">
+             <string>Tesseract OCR Settings Menu</string>
+            </property>
+            <property name="statusTip">
+             <string/>
+            </property>
+            <property name="whatsThis">
+             <string/>
+            </property>
+            <property name="layoutDirection">
+             <enum>Qt::LeftToRight</enum>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">QPushButton {
+	color: #148fa3;
+    background-color: none;
+    border: none;
+	margin-top: 10px;
+	font-weight: bold;
+}
+</string>
+            </property>
+            <property name="text">
+             <string>   Tesseract OCR</string>
+            </property>
+            <property name="icon">
+             <iconset>
+              <normaloff>../../assets/TesseractSettings128.png</normaloff>../../assets/TesseractSettings128.png</iconset>
+            </property>
+            <property name="iconSize">
+             <size>
+              <width>40</width>
+              <height>40</height>
+             </size>
+            </property>
+            <property name="checkable">
+             <bool>false</bool>
+            </property>
+            <property name="checked">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QPushButton" name="settings_button">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="toolTip">
+          <string>Settings Menu</string>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: none;
+    border: none;
+}
+</string>
+         </property>
+         <property name="text">
+          <string/>
+         </property>
+         <property name="icon">
+          <iconset>
+           <normaloff>../../assets/settings125.png</normaloff>../../assets/settings125.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>45</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="checkable">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0" colspan="2">
+        <widget class="QPushButton" name="eraser_button">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	color: #d7d7d7;
+    background-color: qlineargradient(spread:reflect, x1:0, y1:0.466, x2:1, y2:0.801136, stop:0 #b0454b, stop:0.8 #101f32);
+    border: 1px solid rgba(0, 0, 0, 0);
+    padding: 6px 2px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 14px;
+    border-width: 2px;
+}
+
+QPushButton:hover {
+    background-color: qlineargradient(spread:reflect, x1:0, y1:0.466, x2:1, y2:0.801136, stop:0 #b0454b, stop:1 #101f32);
+}
+
+QPushButton:pressed {
+    background-color: #b0454b;
+}
+
+QPushButton:disabled {
+	color: #c38e91;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Text Eraser</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="import_file_button">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="toolTip">
+          <string>Add new folder/images</string>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: #101f32;
+    border: none;
+    color: #d7d7d7;
+    padding: 8px 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    border-width: 3px;
+    min-width: 1em;
+    min-height: 1em;
+}
+
+QPushButton:hover {
+    background-color: #172e4a;
+}
+
+QPushButton:pressed {
+    background-color: #0d1929;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Add</string>
+         </property>
+         <property name="flat">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0" colspan="6">
+        <widget class="QPushButton" name="translate_button">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="font">
+          <font>
+           <pointsize>-1</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+           <underline>false</underline>
+           <strikeout>false</strikeout>
+          </font>
+         </property>
+         <property name="toolTip">
+          <string>Scans &amp; translates entire image</string>
+         </property>
+         <property name="autoFillBackground">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	color: #d7d7d7;
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.2 #148fa3, stop:1 #0d404e); 
+    border: none;
+    padding: 8px 2px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    border-width: 2px;
+    min-width: 8em;
+    margin-top: 5px;  
+}
+
+
+QPushButton:hover {
+	color: #b7b7b7;
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.2 #107282, stop:1 #0a333e); 
+}
+
+QPushButton:pressed {
+	color: #898989;
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.2 #0d5b68, stop:1 #082932); 
+}
+
+QPushButton:disabled {
+	color: #71adc1;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Scan Image</string>
+         </property>
+         <property name="checkable">
+          <bool>false</bool>
+         </property>
+         <property name="checked">
+          <bool>false</bool>
+         </property>
+         <property name="autoDefault">
+          <bool>false</bool>
+         </property>
+         <property name="default">
+          <bool>false</bool>
+         </property>
+         <property name="flat">
+          <bool>false</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0" colspan="6">
+        <widget class="QTreeView" name="selection_tree_UI">
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QTreeView {
+            border: 2px solid #101f32;
+            border-radius: 5px; 
+            background-color: #2b2b2b;
+            padding: 6px 6px;
+        	margin-top: 0px;
+        }
+
+        QTreeView::item:hover {
+            background-color: #4d4d4d;  
+        }
+
+        QTreeView::item:selected {
+            background-color: #13a29a;
+            border-radius: 4px;
+        }
+
+
+        QTreeView::branch:has-siblings:!adjoins-item {
+            border-image: url(assets/stylesheet-vline.png) 0;
+        }
+
+        QTreeView::branch:has-siblings:adjoins-item {
+            border-image: url(assets/stylesheet-branch-more.png) 0;
+        }
+
+        QTreeView::branch:!has-children:!has-siblings:adjoins-item {
+            border-image: url(assets/stylesheet-branch-end.png) 0;
+        }
+
+        QTreeView::branch:has-children:!has-siblings:closed,
+        QTreeView::branch:closed:has-children:has-siblings {
+            border-image: none;
+            image: url(assets/stylesheet-branch-closed.png);
+        }
+
+        QTreeView::branch:open:has-children:!has-siblings,
+        QTreeView::branch:open:has-children:has-siblings  {
+            border-image: none;
+            image: url(assets/stylesheet-branch-open.png);
+        }
+
+        QScrollBar {
+          background: #2b2b2b;  
+          border-radius: 5px;  
+        }
+
+        QScrollBar::handle {
+          background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(16, 31, 50, 100), stop:1 rgba(20, 143, 163, 100));  
+          border-radius: 4px;
+          opacity: 0.8;
+          width: 5px;  
+        }
+
+        QScrollBar::add-line, QScrollBar::sub-line {
+          width: 0px;
+          height: 0px;
+          margin: 0px;
+        }
+
+        QScrollBar::sub-page, QScrollBar::add-page {
+          background: #2b2b2b;
+        }</string>
+         </property>
+         <property name="verticalScrollBarPolicy">
+          <enum>Qt::ScrollBarAlwaysOff</enum>
+         </property>
+         <property name="horizontalScrollBarPolicy">
+          <enum>Qt::ScrollBarAlwaysOff</enum>
+         </property>
+         <property name="editTriggers">
+          <set>QAbstractItemView::NoEditTriggers</set>
+         </property>
+         <property name="dragEnabled">
+          <bool>false</bool>
+         </property>
+         <property name="alternatingRowColors">
+          <bool>false</bool>
+         </property>
+         <property name="selectionMode">
+          <enum>QAbstractItemView::SingleSelection</enum>
+         </property>
+         <property name="selectionBehavior">
+          <enum>QAbstractItemView::SelectRows</enum>
+         </property>
+         <property name="autoExpandDelay">
+          <number>-1</number>
+         </property>
+         <property name="indentation">
+          <number>15</number>
+         </property>
+         <property name="uniformRowHeights">
+          <bool>false</bool>
+         </property>
+         <property name="animated">
+          <bool>true</bool>
+         </property>
+         <property name="wordWrap">
+          <bool>true</bool>
+         </property>
+         <property name="expandsOnDoubleClick">
+          <bool>true</bool>
+         </property>
+         <attribute name="headerVisible">
+          <bool>false</bool>
+         </attribute>
+         <attribute name="headerStretchLastSection">
+          <bool>true</bool>
+         </attribute>
+        </widget>
+       </item>
+       <item row="7" column="2" colspan="4">
+        <widget class="QPushButton" name="scanner_button">
+         <property name="enabled">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	color: #d7d7d7;
+    background-color: qlineargradient(spread:reflect, x1:0, y1:0.420318, x2:0.955224, y2:0.966, stop:0.25 #101f32, stop:1 #148fa3);
+    border: 1px solid rgba(0, 0, 0, 0);
+    padding: 6px 2px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 14px;
+    border-width: 2px;
+}
+
+QPushButton:hover {    
+	background-color: qlineargradient(spread:reflect, x1:0, y1:0.420318, x2:0.955224, y2:0.966, stop:0.1 #101f32, stop:1 #148fa3);
+}
+
+QPushButton:pressed {
+	background-color: #148fa3;
+}
+
+QPushButton:disabled {
+	color: #91abb9;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Area Scanner</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QPushButton" name="import_folder_button">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	color: #fcfcfc;
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 #1b95cb, stop:1 #13a29a); 
+    padding: 8px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 #0d6e69, stop:1 #146f97); 
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 #063b38, stop:1 #0d4964); 
+}</string>
+         </property>
+         <property name="text">
+          <string>Folder</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="4">
+        <widget class="QPushButton" name="import_image_button">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="toolTip">
+          <string/>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+	color: #fcfcfc;
+    background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 #13a29a, stop:1 #1b95cb); 
+    padding: 8px;
+    border-radius: 14px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 #146f97, stop:1 #0d6e69); 
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 #0d4964, stop:1 #063b38); 
+}</string>
+         </property>
+         <property name="text">
+          <string>Image</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="2" column="3">
+     <widget class="QFrame" name="frame_5">
+      <property name="styleSheet">
+       <string notr="true">QFrame {
+	border: none;
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_5">
+       <item row="1" column="0">
+        <widget class="ImageViewer" name="ImageViewerORIGINAL">
+         <property name="cursor" stdset="0">
+          <cursorShape>ArrowCursor</cursorShape>
+         </property>
+         <property name="mouseTracking">
+          <bool>false</bool>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QGraphicsView {
+  background-color: rgba(23, 34, 48, 55);  
+  color: #d3d3d3;  
+  border-radius: 4px;
+}
+
+QScrollBar {
+  background: #2b2b2b;  
+  border-radius: 5px;  
+}
+
+QScrollBar::handle {
+  background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(16, 31, 50, 100), stop:1 rgba(20, 143, 163, 100));  
+  border-radius: 4px;
+  opacity: 0.8;
+  width: 8px;  
+}
+
+QScrollBar::add-line, QScrollBar::sub-line {
+  width: 0px;
+  height: 0px;
+  margin: 0px;
+}
+
+QScrollBar::sub-page, QScrollBar::add-page {
+  background: #2b2b2b;
+}</string>
+         </property>
+         <property name="verticalScrollBarPolicy">
+          <enum>Qt::ScrollBarAsNeeded</enum>
+         </property>
+         <property name="sizeAdjustPolicy">
+          <enum>QAbstractScrollArea::AdjustIgnored</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="ImageViewer" name="ImageViewerTRANSLATED">
+         <property name="styleSheet">
+          <string notr="true">QGraphicsView {
+  background-color: rgba(20, 143, 163, 55);  
+  color: #2a1f2e;  
+  border-radius: 4px;
+}
+
+QScrollBar {
+  background: #2b2b2b;  
+  border-radius: 5px;  
+}
+
+QScrollBar::handle {
+  background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(16, 31, 50, 100), stop:1 rgba(20, 143, 163, 100));  
+  border-radius: 4px;
+  opacity: 0.8;
+  width: 8px;  
+}
+
+QScrollBar::add-line, QScrollBar::sub-line {
+  width: 0px;
+  height: 0px;
+  margin: 0px;
+}
+
+QScrollBar::sub-page, QScrollBar::add-page {
+  background: #2b2b2b;
+}
+
+</string>
+         </property>
+         <property name="verticalScrollBarPolicy">
+          <enum>Qt::ScrollBarAsNeeded</enum>
+         </property>
+         <property name="sizeAdjustPolicy">
+          <enum>QAbstractScrollArea::AdjustIgnored</enum>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QScrollBar" name="SyncSB">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Minimum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QScrollBar {
+  background: #2b2b2b;  
+  border-radius: 5px;  
+}
+
+QScrollBar::handle {
+  background: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 rgba(16, 31, 50, 100), stop:1 rgba(20, 143, 163, 100));  
+  border-radius: 4px;
+  opacity: 0.8;
+  width: 8px;  
+}
+
+QScrollBar::add-line, QScrollBar::sub-line {
+  width: 0px;
+  height: 0px;
+  margin: 0px;
+}
+
+QScrollBar::sub-page, QScrollBar::add-page {
+  background: #2b2b2b;
+}</string>
+         </property>
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="3">
+     <widget class="QLabel" name="information">
+      <property name="cursor">
+       <cursorShape>ArrowCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLabel {
+	font-weight: bold;
+	color: #d7d7d7;
+    background-color: none;
+    border: 1px solid #101f32;
+    padding: 5px; 
+    font-size: 14px;
+    border-radius: 6px; 
+}
+</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignCenter</set>
+      </property>
+      <property name="wordWrap">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>ImageViewer</class>
+   <extends>QGraphicsView</extends>
+   <header>core.ImageViewer</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

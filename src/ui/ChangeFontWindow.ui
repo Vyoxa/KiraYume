@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Fonts</class>
+ <widget class="QWidget" name="Fonts">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="1" column="3" colspan="2">
+    <widget class="QPushButton" name="add_font_button">
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	color: #fcfcfc;
+    background-color:qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 #13a29a, stop:1 #1b95cb); 
+    padding: 8px;
+    border-radius: 14px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 #146f97, stop:1 #0d6e69); 
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 #0d4964, stop:1 #063b38); 
+}</string>
+     </property>
+     <property name="text">
+      <string>Add new font</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" colspan="5">
+    <widget class="QGroupBox" name="fonts_box">
+     <property name="styleSheet">
+      <string notr="true">QGroupBox {
+    color: #fcfcfc;
+    border: 2px solid #13a29a;
+    border-radius: 6px;
+    margin-top: 10px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+QGroupBox::title {
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+    padding: 0 5px;
+    color: #13a29a;
+}
+
+QRadioButton {
+	color: #E5E5E5;
+    background-color: #333;
+    padding: 3px;
+    border-radius: 5px;
+	font-weight: bold;
+}
+
+QRadioButton::indicator {
+    width: 15px;
+    height: 15px;
+    border-radius: 7px;
+    border: 2px solid #444;
+    background: #222;
+}
+
+QRadioButton::indicator:checked {
+    border: 2px solid #009688;
+    background: #003c45;
+}
+
+QRadioButton::indicator:unchecked:hover {
+    border: 2px solid #666;
+}
+
+QRadioButton::indicator:checked:hover {
+    border: 2px solid #33a89f;
+}
+
+QRadioButton:focus {
+    outline: none;
+}</string>
+     </property>
+     <property name="title">
+      <string/>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_5"/>
+    </widget>
+   </item>
+   <item row="1" column="2">
+    <widget class="QPushButton" name="open_folder_button">
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	color: #fcfcfc;
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 #1b95cb, stop:1 #13a29a); 
+    padding: 8px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 #0d6e69, stop:1 #146f97); 
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 #063b38, stop:1 #0d4964); 
+}</string>
+     </property>
+     <property name="text">
+      <string>Open fonts folder</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0" colspan="2">
+    <widget class="QPushButton" name="reload_button">
+     <property name="styleSheet">
+      <string notr="true">QPushButton {
+	color: #fcfcfc;
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 #1b95cb, stop:1 #13a29a); 
+    padding: 8px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+QPushButton:hover {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 #0d6e69, stop:1 #146f97); 
+}
+
+QPushButton:pressed {
+    background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 #063b38, stop:1 #0d4964); 
+}</string>
+     </property>
+     <property name="text">
+      <string>Reload</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
